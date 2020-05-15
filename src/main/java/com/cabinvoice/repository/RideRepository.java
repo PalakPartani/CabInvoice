@@ -1,4 +1,6 @@
-package com.cabinvoice;
+package com.cabinvoice.repository;
+
+import com.cabinvoice.service.Ride;
 
 import java.util.*;
 
@@ -12,7 +14,7 @@ public class RideRepository {
     public void addRide(String userId, Ride[] ride) {
         ArrayList<Ride> rideArrayList = this.userRides.get(userId);
         if (rideArrayList == null) {
-            this.userRides.put(userId, new ArrayList<Ride>((Arrays.asList(ride))));
+            this.userRides.put(userId, new ArrayList<>((Arrays.asList(ride))));
         }
     }
 

@@ -1,6 +1,4 @@
-package com.cabinvoice;
-
-import java.util.Objects;
+package com.cabinvoice.service;
 
 public class InvoiceSummary {
     public int totalFare;
